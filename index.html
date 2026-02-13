@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플러스 오퍼 | 브랜드 점유율의 새로운 기준</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <style>
+        :root {
+            --brand-purple: #9167F5;
+            --brand-purple-light: #F5F1FF;
+            --bg-gray: #F8FAFC;
+        }
+        body {
+            font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+            background-color: var(--bg-gray);
+            color: #1A1A1E;
+            margin: 0;
+            padding: 0;
+            word-break: keep-all;
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Blob Animations */
+        @keyframes blob-float {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.05); }
+            66% { transform: translate(-20px, 20px) scale(0.95); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        @keyframes blob-float-reverse {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(-30px, 50px) scale(1.05); }
+            66% { transform: translate(20px, -20px) scale(0.95); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob-slow {
+            animation: blob-float 20s infinite ease-in-out;
+        }
+        .animate-blob-slow-reverse {
+            animation: blob-float-reverse 25s infinite ease-in-out;
+        }
+
+        /* Particle Animations */
+        @keyframes float-up {
+            0% {
+                transform: translateY(120vh) scale(0.8);
+                opacity: 0;
+            }
+            10% {
+                opacity: var(--target-opacity, 0.4);
+            }
+            90% {
+                opacity: var(--target-opacity, 0.4);
+            }
+            100% {
+                transform: translateY(-20vh) scale(1.2);
+                opacity: 0;
+            }
+        }
+
+        /* Scroll Bounce Animation */
+        @keyframes scroll-bounce {
+            0%, 100% { transform: translateY(0); opacity: 0.3; }
+            50% { transform: translateY(8px); opacity: 1; }
+        }
+        .animate-scroll-bounce {
+            animation: scroll-bounce 2s infinite ease-in-out;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                pretendard: ['Pretendard', 'sans-serif'],
+              },
+              // Design System JSON Mapping
+              fontSize: {
+                '0': '10px',
+                '1': '12px',
+                '2': '14px',
+                '3': '16px',
+                '4': '18px',
+                '5': '20px',
+                '6': '24px',
+                '7': '26px',
+                // Custom overrides for Landing Page Hero specific needs (optional, but keeping system strict where possible)
+                'hero-mobile': '40px',
+                'hero-desktop': '60px',
+              },
+              lineHeight: {
+                '0': '34px',
+                '1': '32px',
+                '2': '26px',
+                '3': '26px', 
+                '4': '24px',
+                '5': '22px',
+                '6': '20px',
+                '7': '14px',
+                '8': '12px',
+                '13': '18px',
+                '19': '1.2', 
+              },
+              fontWeight: {
+                bold: 700,   // pretendard-0
+                regular: 400, // pretendard-1
+                medium: 500,  // pretendard-2
+              },
+              colors: {
+                brand: '#9167F5',
+                gray: {
+                    DEFAULT: '#ffffff', // System gray value
+                    50: '#f9fafb',
+                    100: '#f3f4f6',
+                    200: '#e5e7eb',
+                    300: '#d1d5db',
+                    400: '#9ca3af',
+                    500: '#6b7280',
+                    900: '#111827',
+                }
+              },
+              letterSpacing: {
+                  '0': '0px',
+                  '1': '0px', // System says "0%"
+              }
+            }
+          }
+        }
+      </script>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "recharts": "https://esm.sh/recharts@2.15.0?external=react,react-dom",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+</body>
+</html>
