@@ -126,7 +126,6 @@ const App: React.FC = () => {
                 >
                     <span className="relative flex items-center gap-2 tracking-1">
                         지금 시작하기
-                        <svg className="w-4 h-4 transition-transform group-hover:translate-x-1 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                     </span>
                 </button>
             </div>
@@ -159,53 +158,10 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Why Section */}
-      <section id="why" className="pt-16 pb-32 px-6 lg:px-12 bg-[#111] text-white rounded-t-[30px] md:rounded-t-[50px] -mt-20 relative z-10">
-        <div className="max-w-[1280px] mx-auto pt-10">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-24">
-             <div className="max-w-2xl">
-                {/* H1 Style + Custom scaling for emphasis */}
-                <h2 className="text-7 md:text-[40px] font-bold leading-tight tracking-0 mb-8">
-                    이미 샘플은<br />
-                    보내고 계십니다.<br />
-                    <span className="text-gray-500">이제 더 많이 노출될 차례입니다.</span>
-                </h2>
-                {/* Body3 Style */}
-                <p className="text-4 text-gray-400 font-medium leading-4 tracking-0">
-                    플러스 오퍼는 다른 카테고리의 제품을 선택한 고객에게<br className="hidden md:block" /> 우리의 샘플을 함께 배송하는 광고 서비스입니다.
-                </p>
-             </div>
-          </div>
 
-          <div className="space-y-4">
-             {[
-                  { title: "경쟁 브랜드 대비 점유율 확대", desc: "카테고리 내 독점적 브랜드 위상 강화", color: "from-purple-500 to-blue-500" },
-                  { title: "샘플 선택 확률 상승", desc: "타겟 고객 대상 맞춤형 큐레이션 제공", color: "from-blue-500 to-cyan-500" },
-                  { title: "자연스러운 브랜드 경험", desc: "고객이 직접 선택한 제품과 함께 배송되어 거부감 없음", color: "from-cyan-500 to-teal-500" }
-                ].map((item, i) => (
-                    <div key={i} className="group relative overflow-hidden rounded-[32px] bg-[#1A1A1A] hover:bg-[#222] border border-white/5 transition-all duration-500">
-                        <div className="p-10 md:p-14 flex flex-col md:flex-row items-start md:items-center justify-between relative z-10">
-                            <div>
-                                {/* Subtitle5 */}
-                                <span className="inline-block text-1 font-bold leading-7 tracking-1 text-gray-500 mb-2">0{i+1} POINT</span>
-                                {/* H2 Style */}
-                                <h3 className="text-6 font-bold leading-1 tracking-0 text-white mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-400 transition-all">{item.title}</h3>
-                                {/* Body4 Style */}
-                                <p className="text-gray-400 text-3 leading-5 tracking-1 max-w-2xl">{item.desc}</p>
-                            </div>
-                            <div className="mt-8 md:mt-0 w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all">
-                                <svg className="w-5 h-5 -rotate-45 group-hover:rotate-0 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-                            </div>
-                        </div>
-                        <div className={`absolute inset-0 bg-gradient-to-r ${item.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
-                    </div>
-                ))}
-          </div>
-        </div>
-      </section>
 
       {/* Target Brands */}
-      <section className="py-32 px-6 lg:px-12 bg-[#F8F9FA]">
+      <section className="py-32 px-6 lg:px-12 bg-[#E5E7EB]">
         <div className="max-w-[1280px] mx-auto">
           <div className="text-center mb-20">
             {/* H1 Style */}
@@ -267,9 +223,9 @@ const App: React.FC = () => {
             <h2 className="text-7 font-bold leading-0 mb-16 text-[#111] tracking-0">플러스 오퍼의<br className="md:hidden" /> 핵심 장점</h2>
             <div className="grid md:grid-cols-4 gap-8">
                 {ADVANTAGES.map((adv, idx) => (
-                    <div key={adv.id} className="group relative pt-8 border-t border-gray-100 hover:border-[#111] transition-colors duration-500">
+                    <div key={adv.id} className="group relative pt-8 border-t border-gray-300 hover:border-[#111] transition-colors duration-500">
                         {/* H1 Style + Custom Size */}
-                        <div className="text-[40px] font-bold text-gray-100 mb-6 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-br group-hover:from-[#9167F5] group-hover:to-blue-500 transition-all duration-500">
+                        <div className="text-[40px] font-bold text-gray-300 mb-6 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-br group-hover:from-[#9167F5] group-hover:to-blue-500 transition-all duration-500">
                             0{idx + 1}
                         </div>
                         {/* Subtitle2 Style */}
@@ -300,9 +256,51 @@ const App: React.FC = () => {
         </div>
       </section>
 
+      {/* Why Section */}
+      <section id="why" className="mt-16 pt-16 pb-32 px-6 lg:px-12 bg-[#E5E7EB] text-[#111] relative z-10">
+        <div className="max-w-[1280px] mx-auto pt-10">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-24">
+             <div className="max-w-2xl">
+                {/* H1 Style + Custom scaling for emphasis */}
+                <h2 className="text-7 md:text-[40px] font-bold leading-tight tracking-0 mb-8">
+                    이미 샘플은<br />
+                    보내고 계십니다.<br />
+                    <span className="text-gray-500">이제 더 많이 노출될 차례입니다.</span>
+                </h2>
+                {/* Body3 Style */}
+                <p className="text-4 text-gray-500 font-medium leading-4 tracking-0">
+                    플러스 오퍼는 다른 카테고리의 제품을 선택한 고객에게<br className="hidden md:block" /> 우리의 샘플을 함께 배송하는 광고 서비스입니다.
+                </p>
+             </div>
+          </div>
+
+          <div className="space-y-4">
+             {[
+                  { title: "경쟁 브랜드 대비 점유율 확대", desc: "카테고리 내 독점적 브랜드 위상 강화", color: "from-purple-500 to-blue-500" },
+                  { title: "샘플 선택 확률 상승", desc: "타겟 고객 대상 맞춤형 큐레이션 제공", color: "from-blue-500 to-cyan-500" },
+                  { title: "자연스러운 브랜드 경험", desc: "고객이 직접 선택한 제품과 함께 배송되어 거부감 없음", color: "from-cyan-500 to-teal-500" }
+                ].map((item, i) => (
+                    <div key={i} className="group relative overflow-hidden rounded-[32px] bg-white hover:shadow-xl border border-gray-100 transition-all duration-500">
+                        <div className="p-10 md:p-14 flex flex-col md:flex-row items-start md:items-center justify-between relative z-10">
+                            <div>
+                                {/* Subtitle5 */}
+                                <span className="inline-block text-1 font-bold leading-7 tracking-1 text-gray-400 mb-2">0{i+1} POINT</span>
+                                {/* H2 Style */}
+                                <h3 className="text-6 font-bold leading-1 tracking-0 text-[#111] mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-blue-500 transition-all">{item.title}</h3>
+                                {/* Body4 Style */}
+                                <p className="text-gray-500 text-3 leading-5 tracking-1 max-w-2xl">{item.desc}</p>
+                            </div>
+                        </div>
+                        <div className={`absolute inset-0 bg-gradient-to-r ${item.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
+                    </div>
+                ))}
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-32 px-6 lg:px-12 bg-white">
-        <div className="max-w-[1000px] mx-auto">
+        <div className="max-w-[1280px] mx-auto">
           {/* H2 Style */}
           <h2 className="text-6 font-bold leading-1 mb-16 text-[#111] tracking-0">자주 묻는 질문</h2>
           <FAQAccordion items={FAQS} />
