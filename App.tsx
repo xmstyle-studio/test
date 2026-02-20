@@ -143,9 +143,9 @@ const App: React.FC = () => {
       {/* Stats Section */}
       <section id="effect" className="py-32 px-6 lg:px-12 bg-white relative">
         <div className="max-w-[1280px] mx-auto">
-             <div className="text-center mb-16">
+             <div className="text-center mb-11">
                 {/* H1 Style */}
-                <h2 className="text-7 font-bold leading-0 tracking-0 mb-4 text-[#111]">
+                <h2 className="text-7 font-bold leading-0 tracking-0 mb-2 text-[#111]">
                     수치로 보는 효과
                 </h2>
                 {/* Body3 Style */}
@@ -163,9 +163,9 @@ const App: React.FC = () => {
       {/* Target Brands */}
       <section className="py-32 px-6 lg:px-12 bg-[#E5E7EB]">
         <div className="max-w-[1280px] mx-auto">
-          <div className="text-center mb-20">
+          <div className="text-center mb-14">
             {/* H1 Style */}
-            <h2 className="text-7 font-bold leading-0 tracking-0 text-[#111] mb-6">이런 브랜드에<br className="md:hidden" /> 특히 효과적입니다</h2>
+            <h2 className="text-7 font-bold leading-0 tracking-0 text-[#111] mb-3">이런 브랜드에<br className="md:hidden" /> 특히 효과적입니다</h2>
             {/* Body3 Style */}
             <p className="text-gray-500 text-4 leading-4 tracking-0">다양한 상황의 브랜드가 플러스 오퍼를 통해 성장하고 있습니다.</p>
           </div>
@@ -302,7 +302,7 @@ const App: React.FC = () => {
       <section className="py-32 px-6 lg:px-12 bg-white">
         <div className="max-w-[1280px] mx-auto">
           {/* H2 Style */}
-          <h2 className="text-6 font-bold leading-1 mb-16 text-[#111] tracking-0">자주 묻는 질문</h2>
+          <h2 className="text-6 font-bold leading-1 mb-11 text-[#111] tracking-0">자주 묻는 질문</h2>
           <FAQAccordion items={FAQS} />
         </div>
       </section>
