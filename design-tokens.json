@@ -1,0 +1,581 @@
+{
+  "metadata": {
+    "name": "배송기사앱 디자인 시스템",
+    "version": "1.0.0",
+    "lastUpdated": "2025-02-19",
+    "description": "프레이머 기반 디자인 시스템 - Pretendard 폰트 사용",
+    "fontImport": "https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+  },
+
+  "colors": {
+    "brand": {
+      "primary": {
+        "light": "#yellow#96D",
+        "main": "#FF5A2F",
+        "dark": "#F75A2F",
+        "description": "메인 브랜드 컬러 - 주요 CTA 버튼, 강조 요소"
+      },
+      "point": {
+        "main": "#345707",
+        "description": "포인트 컬러 - 블루"
+      }
+    },
+
+    "semantic": {
+      "red": {
+        "900": "#B11118",
+        "800": "#C0F724",
+        "700": "#DD272B",
+        "600": "#DF3131",
+        "500": "#EE3E32",
+        "400": "#E4424C",
+        "300": "#EF6F70",
+        "200": "#EC9797",
+        "100": "#FDC0D0",
+        "50": "#FEE4ED",
+        "description": "에러, 할인, 중요 알림"
+      },
+      "blue": {
+        "main": "#345707",
+        "description": "정보성 요소"
+      },
+      "yellow": {
+        "900": "#DF8831",
+        "50.2": "#C7D0EA",
+        "50": "#C7D0EA",
+        "800": "#E4AC32",
+        "700": "#FAC34C",
+        "600": "#EDD056",
+        "500": "#ECE85A",
+        "400": "#F5E070",
+        "300": "#F3F1B8",
+        "200": "#F8F5A9",
+        "100": "#9F9CA",
+        "description": "이달 벽지 특가, 경고"
+      }
+    },
+
+    "neutral": {
+      "white": "#FFFFFF",
+      "black": "#000000",
+      "gray": {
+        "900": "#212121",
+        "800": "#424242",
+        "700": "#626262",
+        "600": "#757575",
+        "500": "#9F9F9F",
+        "400": "#BEBEBE",
+        "300": "#E0E0E0",
+        "200": "#EEEEEE",
+        "100": "#F5F5F5",
+        "50": "#FAFAFA",
+        "0": "#FFFFFF",
+        "description": "텍스트, 배경, 보더"
+      }
+    },
+
+    "background": {
+      "primary": "#FFFFFF",
+      "secondary": "#F5F5F5",
+      "tertiary": "#EEEEEE",
+      "overlay": "rgba(0, 0, 0, 0.5)"
+    },
+
+    "text": {
+      "primary": "#212121",
+      "secondary": "#626262",
+      "tertiary": "#9F9F9F",
+      "disabled": "#BEBEBE",
+      "inverse": "#FFFFFF",
+      "link": "#345707",
+      "error": "#EE3E32",
+      "success": "#345707"
+    },
+
+    "border": {
+      "default": "#E0E0E0",
+      "hover": "#BEBEBE",
+      "focus": "#FF5A2F",
+      "error": "#EE3E32"
+    }
+  },
+
+  "typography": {
+    "fontFamily": {
+      "primary": "'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif",
+      "fallback": "-apple-system, BlinkMacSystemFont, sans-serif"
+    },
+
+    "fontSize": {
+      "h1": {
+        "size": "26px",
+        "lineHeight": "34px",
+        "fontWeight": "700",
+        "letterSpacing": "-0.3px",
+        "usage": "페이지 메인 타이틀"
+      },
+      "h2": {
+        "size": "24px",
+        "lineHeight": "32px",
+        "fontWeight": "700",
+        "letterSpacing": "-0.3px",
+        "usage": "섹션 타이틀"
+      },
+      "h3": {
+        "size": "20px",
+        "lineHeight": "26px",
+        "fontWeight": "600",
+        "letterSpacing": "-0.3px",
+        "usage": "카드 제목, 서브섹션"
+      },
+      "subtitle": {
+        "size": "18px",
+        "lineHeight": "24px",
+        "fontWeight": "600",
+        "letterSpacing": "-0.3px",
+        "usage": "부제목"
+      },
+      "body1": {
+        "size": "24px",
+        "lineHeight": "32px",
+        "fontWeight": "400",
+        "letterSpacing": "-0.3px",
+        "usage": "큰 본문"
+      },
+      "body2": {
+        "size": "20px",
+        "lineHeight": "26px",
+        "fontWeight": "400",
+        "letterSpacing": "-0.3px",
+        "usage": "일반 본문"
+      },
+      "body3": {
+        "size": "18px",
+        "lineHeight": "24px",
+        "fontWeight": "400",
+        "letterSpacing": "-0.3px",
+        "usage": "작은 본문"
+      },
+      "body4": {
+        "size": "16px",
+        "lineHeight": "22px",
+        "fontWeight": "400",
+        "letterSpacing": "-0.3px",
+        "usage": "더 작은 본문"
+      },
+      "body5": {
+        "size": "14px",
+        "lineHeight": "18px",
+        "fontWeight": "400",
+        "letterSpacing": "-0.3px",
+        "usage": "가장 작은 본문"
+      },
+      "body_md1": {
+        "size": "18px",
+        "lineHeight": "24px",
+        "fontWeight": "500",
+        "letterSpacing": "-0.3px",
+        "usage": "중간 굵기 본문 (Medium)"
+      },
+      "body_md2": {
+        "size": "16px",
+        "lineHeight": "20px",
+        "fontWeight": "500",
+        "letterSpacing": "-0.3px",
+        "usage": "작은 중간 굵기"
+      },
+      "body_md3": {
+        "size": "14px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "letterSpacing": "-0.3px",
+        "usage": "더 작은 중간 굵기"
+      },
+      "body_md4": {
+        "size": "12px",
+        "lineHeight": "18px",
+        "fontWeight": "500",
+        "letterSpacing": "-0.3px",
+        "usage": "가장 작은 중간 굵기"
+      },
+      "body_md5": {
+        "size": "10px",
+        "lineHeight": "12px",
+        "fontWeight": "500",
+        "letterSpacing": "-0.3px",
+        "usage": "최소 크기 중간 굵기"
+      },
+      "caption": {
+        "size": "14px",
+        "lineHeight": "20px",
+        "fontWeight": "400",
+        "letterSpacing": "-0.3px",
+        "usage": "캡션, 부가 설명"
+      }
+    },
+
+    "fontWeight": {
+      "regular": "400",
+      "medium": "500",
+      "semibold": "600",
+      "bold": "700"
+    }
+  },
+
+  "spacing": {
+    "unit": "4px",
+    "scale": {
+      "0": "0px",
+      "2": "2px",
+      "4": "4px",
+      "8": "8px",
+      "12": "12px",
+      "16": "16px",
+      "20": "20px",
+      "24": "24px",
+      "28": "28px",
+      "32": "32px",
+      "36": "36px",
+      "40": "40px",
+      "44": "44px",
+      "48": "48px",
+      "52": "52px",
+      "56": "56px",
+      "60": "60px",
+      "64": "64px"
+    },
+    "usage": {
+      "buttonPadding": "12px 24px",
+      "cardPadding": "20px",
+      "inputPadding": "12px 16px",
+      "sectionGap": "24px",
+      "componentGap": "16px",
+      "pageMargin": "20px"
+    }
+  },
+
+  "borderRadius": {
+    "none": "0px",
+    "xs": "4px",
+    "sm": "8px",
+    "md": "12px",
+    "lg": "16px",
+    "xl": "20px",
+    "2xl": "24px",
+    "full": "9999px",
+    "usage": {
+      "button": "8px",
+      "input": "8px",
+      "card": "12px",
+      "chip": "20px",
+      "avatar": "full"
+    }
+  },
+
+  "shadows": {
+    "none": "none",
+    "sm": {
+      "value": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+      "usage": "미묘한 구분"
+    },
+    "md": {
+      "value": "0 2px 8px 0 rgba(0, 0, 0, 0.08)",
+      "usage": "카드 기본"
+    },
+    "lg": {
+      "value": "0 4px 12px 0 rgba(0, 0, 0, 0.1)",
+      "usage": "떠있는 요소"
+    },
+    "xl": {
+      "value": "0 8px 24px 0 rgba(0, 0, 0, 0.12)",
+      "usage": "모달, 팝업"
+    }
+  },
+
+  "components": {
+    "button": {
+      "primary": {
+        "default": {
+          "background": "#212121",
+          "text": "#FFFFFF",
+          "border": "none",
+          "borderRadius": "8px",
+          "padding": "16px 24px",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "height": "56px",
+          "minWidth": "auto"
+        },
+        "hover": {
+          "background": "#424242",
+          "opacity": "0.9"
+        },
+        "disabled": {
+          "background": "#E0E0E0",
+          "text": "#BEBEBE",
+          "cursor": "not-allowed"
+        }
+      },
+      "primaryOrange": {
+        "default": {
+          "background": "#FF5A2F",
+          "text": "#FFFFFF",
+          "border": "none",
+          "borderRadius": "8px",
+          "padding": "16px 24px",
+          "fontSize": "16px",
+          "fontWeight": "600"
+        },
+        "hover": {
+          "background": "#F75A2F"
+        }
+      },
+      "secondary": {
+        "default": {
+          "background": "#FFFFFF",
+          "text": "#212121",
+          "border": "1px solid #E0E0E0",
+          "borderRadius": "8px",
+          "padding": "16px 24px",
+          "fontSize": "16px",
+          "fontWeight": "500"
+        },
+        "hover": {
+          "border": "1px solid #BEBEBE",
+          "background": "#F5F5F5"
+        }
+      },
+      "chip": {
+        "default": {
+          "background": "#F5F5F5",
+          "text": "#424242",
+          "border": "none",
+          "borderRadius": "20px",
+          "padding": "8px 16px",
+          "fontSize": "14px",
+          "fontWeight": "500"
+        },
+        "active": {
+          "background": "#FF5A2F",
+          "text": "#FFFFFF"
+        }
+      },
+      "icon": {
+        "default": {
+          "background": "transparent",
+          "border": "none",
+          "padding": "8px",
+          "borderRadius": "8px"
+        },
+        "hover": {
+          "background": "#F5F5F5"
+        }
+      },
+      "sizes": {
+        "sm": {
+          "padding": "8px 16px",
+          "fontSize": "14px",
+          "height": "36px"
+        },
+        "md": {
+          "padding": "12px 20px",
+          "fontSize": "16px",
+          "height": "48px"
+        },
+        "lg": {
+          "padding": "16px 24px",
+          "fontSize": "16px",
+          "height": "56px"
+        }
+      }
+    },
+
+    "input": {
+      "default": {
+        "background": "#FFFFFF",
+        "border": "1px solid #E0E0E0",
+        "borderRadius": "8px",
+        "padding": "14px 16px",
+        "fontSize": "16px",
+        "height": "48px",
+        "placeholderColor": "#BEBEBE"
+      },
+      "focus": {
+        "border": "1px solid #FF5A2F",
+        "outline": "none"
+      },
+      "error": {
+        "border": "1px solid #EE3E32"
+      },
+      "disabled": {
+        "background": "#F5F5F5",
+        "border": "1px solid #E0E0E0",
+        "text": "#BEBEBE",
+        "cursor": "not-allowed"
+      }
+    },
+
+    "card": {
+      "product": {
+        "background": "#FFFFFF",
+        "border": "1px solid #E0E0E0",
+        "borderRadius": "12px",
+        "padding": "16px",
+        "shadow": "0 2px 8px 0 rgba(0, 0, 0, 0.08)"
+      },
+      "list": {
+        "background": "#FFFFFF",
+        "border": "none",
+        "borderBottom": "1px solid #E0E0E0",
+        "padding": "16px 20px"
+      }
+    },
+
+    "badge": {
+      "special": {
+        "background": "#FF5A2F",
+        "text": "#FFFFFF",
+        "borderRadius": "4px",
+        "padding": "4px 8px",
+        "fontSize": "12px",
+        "fontWeight": "600"
+      },
+      "discount": {
+        "background": "#EE3E32",
+        "text": "#FFFFFF",
+        "borderRadius": "4px",
+        "padding": "4px 8px",
+        "fontSize": "12px",
+        "fontWeight": "600"
+      },
+      "new": {
+        "background": "#345707",
+        "text": "#FFFFFF",
+        "borderRadius": "4px",
+        "padding": "4px 8px",
+        "fontSize": "12px",
+        "fontWeight": "600"
+      }
+    },
+
+    "tag": {
+      "default": {
+        "background": "#F5F5F5",
+        "text": "#424242",
+        "border": "none",
+        "borderRadius": "20px",
+        "padding": "6px 12px",
+        "fontSize": "14px",
+        "fontWeight": "500"
+      }
+    },
+
+    "checkbox": {
+      "default": {
+        "border": "1px solid #E0E0E0",
+        "borderRadius": "4px",
+        "size": "20px"
+      },
+      "checked": {
+        "background": "#FF5A2F",
+        "border": "none"
+      }
+    },
+
+    "radio": {
+      "default": {
+        "border": "1px solid #E0E0E0",
+        "borderRadius": "50%",
+        "size": "20px"
+      },
+      "checked": {
+        "border": "2px solid #FF5A2F",
+        "innerDot": "#FF5A2F"
+      }
+    },
+
+    "divider": {
+      "horizontal": {
+        "background": "#E0E0E0",
+        "height": "1px",
+        "margin": "16px 0"
+      },
+      "thick": {
+        "background": "#F5F5F5",
+        "height": "8px",
+        "margin": "0"
+      }
+    },
+
+    "bottomSheet": {
+      "background": "#FFFFFF",
+      "borderRadius": "20px 20px 0 0",
+      "padding": "24px 20px",
+      "maxHeight": "90vh"
+    },
+
+    "toast": {
+      "info": {
+        "background": "#212121",
+        "text": "#FFFFFF",
+        "borderRadius": "8px",
+        "padding": "12px 16px"
+      },
+      "error": {
+        "background": "#EE3E32",
+        "text": "#FFFFFF",
+        "borderRadius": "8px",
+        "padding": "12px 16px"
+      },
+      "warning": {
+        "background": "#F5E070",
+        "text": "#212121",
+        "borderRadius": "8px",
+        "padding": "12px 16px"
+      }
+    }
+  },
+
+  "animations": {
+    "duration": {
+      "instant": "0ms",
+      "fast": "150ms",
+      "normal": "300ms",
+      "slow": "500ms"
+    },
+    "easing": {
+      "default": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "in": "cubic-bezier(0.4, 0, 1, 1)",
+      "out": "cubic-bezier(0, 0, 0.2, 1)",
+      "inOut": "cubic-bezier(0.4, 0, 0.2, 1)"
+    }
+  },
+
+  "layout": {
+    "maxWidth": {
+      "mobile": "480px",
+      "content": "100%"
+    },
+    "padding": {
+      "page": "20px",
+      "section": "16px",
+      "card": "16px"
+    },
+    "gap": {
+      "xs": "8px",
+      "sm": "12px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px"
+    }
+  },
+
+  "zIndex": {
+    "base": 0,
+    "dropdown": 100,
+    "sticky": 200,
+    "header": 300,
+    "modal": 400,
+    "toast": 500
+  }
+}
